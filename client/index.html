@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body{background-color: #84e4d4;}
+		.color {
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+
+		}
+
+
+
+
+		.amar {
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+		}
+
+		.dzmer {
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+
+		}
+
+		.vid {
+			position: absolute;
+			right: 380px;
+			width: 720px;
+			height: 720px;
+
+
+
+
+		}
+	</style>
+	<link rel="icon"
+		href="https://static.vecteezy.com/system/resources/previews/005/146/494/original/pixel-art-sheep-character-vector.jpg">
+	<title>Js Game</title>
+	<meta charset="utf8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+	<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<script>
+		var playing = false;
+		var audio = new Audio("music.mp3")
+		music.addEventListener("click", function () {
+
+			if (isPlaying) {
+				audio.pause();
+				audio.currentTime = 0;
+			} else if (!isPlaying) {
+				audio.play();
+			}
+
+			isPlaying = !isPlaying;
+
+			
+		});
+
+	</script>
+	<button id="amar" class="amar">Summer</button>
+	<button id="dzmer" class="dzmer">Winter</button>
+
+
+
+	<div class="hidden">
+		<video id="music" class="vid">
+			<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+			<p>
+				Your browser doesn't support HTML video. Here is a
+				<a href="rabbit320.mp4">link to the video</a> instead.
+			</p>
+		</video>
+	</div>
+
+
+
+
+
+</body>
+
+</html>
